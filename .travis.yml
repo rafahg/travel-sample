@@ -1,10 +1,10 @@
 language: ruby
 rvm:
 - 2.6.3
+cache: bundler
 services:
 - postgresql
 before_script:
-- bundle install
 - psql -c 'create database date_spot_sample_test;' -U postgres
 - bin/rails db:migrate
 dist: trusty
