@@ -15,7 +15,7 @@ deploy:
     secure: fe7qYUn6aThhNEz4Wfm2f8dJ6wb9ZDTu8PR/U39Vtc01OMkUd1v7YE4GuONoK5nNBLV0U7fSAOSb7X3kC51F8Chd2NkDCoeksVpEPrkahg/F94J3rmNL3csJdPuouTJ3hyBH4TStCkY+n4bd3BSVsWVJq4fzJ9KdEPojpLyS6jcQttEfZQ3Vp9cZ4mOgIMWODlb3RYQmZtNVaQhvhTUmYRbXqvgwDlwLHG314yq+k83jwdn9lFiojjKAaftkAuOYyKSt1FUypu7beKTup9O/kkMbvwXxEhFGTAY/KzjAe0gqs9cAhEFWeoCM8cRq02JHjiWGnwMg/0WOZUZicfCtLJ7NlljIgmVC3tlw154+z1RV/8w9ClczkET4ZEsk4OJrqR71k+zP4Zwdnc0ESWFmVkGFYwzeINVHIfuG4oYHan+MzMHl7bg02LNYW5sfCOqJA5ZPbJcqbQZ7zDj402eJBu/0GeqFWyS6XhUiZJ32CnJpJ7GwAhbd5uBg9W4TRpT1g25dI0PhcnXHHI4pXHF6a3WZD3sBtPbiAVQIiqp41i+ljFgFC+LI4w869jPgq/gaQt+DwiAIIdUnI0Wg0UlGWcWYNaRj/cfR4IV+M7RtQXNvKGttHhAS0GQtzCqZ38qha7f+BbDIzXbIQ8RDfkla5OfJVeTPYWl3BRjiLmpiyts=
   
   app: final-travel-trial
-  run: db:create
-  run: db:migrate
+  run: rails db:create
+  run: rails db:migrate
   on:
     repo: rafahg/travel-sample
