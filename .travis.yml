@@ -5,6 +5,7 @@ cache: bundler
 services:
 - postgresql
 before_script:
+- psql -c 'create database date_spot_sample;' -U postgres
 - psql -c 'create database date_spot_sample_test;' -U postgres
 - bin/rails db:migrate
 script:
