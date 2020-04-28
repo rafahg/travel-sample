@@ -5,6 +5,7 @@ cache: bundler
 services:
 - postgresql
 before_script:
+- bundle update --bundler
 - psql -c 'create database date_spot_sample_test;' -U postgres
 - bin/rails db:migrate
 dist: trusty
