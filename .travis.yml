@@ -5,11 +5,8 @@ cache: bundler
 services:
 - postgresql
 before_script:
-- bundle update --bundler
-- gem install bundler:2.1.4
 - psql -c 'create database date_spot_sample_test;' -U postgres
 - bin/rails db:migrate
-dist: trusty
 script:
 - bundle exec rspec
 deploy:
